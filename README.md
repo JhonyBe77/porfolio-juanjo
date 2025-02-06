@@ -12,7 +12,7 @@ Descubre mis proyectos, habilidades y enfoque en diseño y desarrollo web visita
 
 ## 📬 Conectemos
 
-Si te interesa colaborar, compartir ideas o simplemente charlar sobre desarrollo web y diseño UX/UI, estaré encantado de escucharte.
+Si te interesa colaborar o simplemente charlar sobre desarrollo web y diseño UX/UI, estaré encantado de escucharte.
 
 🔹 **[LinkedIn](https://www.linkedin.com/in/jjruiperez)**\
 📧 **Email:** [jjruiperezf@gmail.com](mailto\:jjruiperezf@gmail.com)
