@@ -1,0 +1,153 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+// Animaciones
+@keyframes revealUp {
+    0% { opacity: 0; clip-path: inset(100% 0 0 0); }
+    100% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+
+@keyframes revealRight {
+    0% { opacity: 0; clip-path: inset(0 100% 0 0); }
+    100% { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0px); }
+}
+
+// Estilos de Home
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    padding: 0 10%;
+
+    img {
+        width: calc(100% + 44%);
+        margin-left: -22%;
+        margin-right: -22%;
+        max-height: 30vh;
+        object-fit: cover;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: revealUp 1s ease-out forwards, float 4s ease-in-out infinite 1.2s;
+    }
+
+    // 🔹 Asegurar que los textos NO ocupen todo el ancho
+    h1, h5, h4, p, section {
+        max-width: 700px; // 🔹 Limita el ancho en pantallas grandes
+        width: 100%;
+        margin: 0 auto; // 🔹 Centra el contenido dentro del ancho limitado
+        text-align: left;
+    }
+
+    h1, h4, p {
+        opacity: 0;
+        animation: revealRight 3s ease-out forwards, float 4.5s ease-in-out infinite 1.3s;
+    }
+
+    h5 {
+        color: lighten($dark, 30%);
+        opacity: 0;
+        animation: revealRight 3s ease-out forwards, float 4.5s ease-in-out infinite 1.3s;
+    }
+
+    h1 { animation-delay: 0.3s; }
+    h5 { animation-delay: 0.6s; }
+    h4 { animation-delay: 0.9s; }
+    p { animation-delay: 1.2s; }
+
+    // 📌 Corrección: Asegurar que los iconos y el botón se alineen a la derecha Y NO OCUPEN TODO EL ANCHO
+    section {
+        max-width: 800px; // 🔹 Limita el ancho del bloque de botones e iconos
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        article:first-child {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a.icon {
+                color: $light;
+                font-size: 24px;
+                transition: transform 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                    color: $primary-color;
+                }
+            }
+        }
+
+        article:last-child {
+            display: flex;
+            a {
+                display: flex;
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $light;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+
+                    &:hover {
+                        color: $secondary-color;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 🔹 Ajustamos la vista móvil para que el contenido siga ocupando el ancho completo
+@media screen and (max-width: 680px) {
+    #home {
+        padding: 14px;
+
+        img {
+            width: calc(100% + 28px);
+            margin-left: -14px;
+            margin-right: -14px;
+            max-height: 50vh;
+            height: auto;
+        }
+
+        h1, h5, h4, p, section {
+            max-width: 100%; // 🔹 Elimina el límite de ancho en móviles
+        }
+
+        h1 {
+            font-size: 55px;
+            line-height: 0.9;
+        }
+
+        h5 {
+            font-size: 20px;
+            line-height: 1.2;
+            color: lighten($dark, 30%);
+        }
+
+        section {
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}

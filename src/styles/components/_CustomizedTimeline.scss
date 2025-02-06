@@ -1,0 +1,121 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins.scss' as *;
+
+#timeline {
+  .MuiTimelineItem-root {
+    margin-bottom: 7px; // Espacio entre elementos del timeline
+  }
+  .MuiTimelineContent-root {
+    margin-left: 7px; // Aumenta el espacio entre el contenido y los iconos
+  }
+  .timelineContent {
+    background: none;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(3, 10, 55, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: left; // Asegura que el texto largo sea fácil de leer
+    line-height: 1.5;
+    word-wrap: break-word;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 14px rgba(3, 10, 55, 0.3);
+    }
+  }
+
+  // Efecto hover diferente para Educación
+  .educationHover:hover {
+    background-color: rgba($primary-color, 0.1);
+    border-left: 1px solid $primary-color;
+  }
+
+  // Efecto hover diferente para Trabajo
+  .workHover:hover {
+    background-color: rgba($secondary-color, 0.1);
+    border-left: 1px solid $secondary-color;
+  }
+
+  .timelineContentTitle {
+    @include bricolage-grotesque;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 7px;
+  }
+
+  .generalData {
+    @include bricolage-grotesque;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: lighten($dark, 40%);
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .typeWork {
+    color: $secondary-color;
+  }
+
+  .typeEducation {
+    color: $primary-color;
+  }
+
+  .typeWorkDot {
+    border: 3px solid ;
+    background: none;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .typeEducationDot {
+    border: 3px solid ;
+    background: none;
+    color: $primary-color;
+    font-size: 1.5rem;
+    padding: 7px;
+    box-shadow: 0px 4px 10px rgba(3, 10, 55, 0.3);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  p {
+    @include bricolage-grotesque;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 7px;
+  }
+
+  .MuiTimelineConnector-root {
+  width: 3px;
+  &.educationConnector {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $primary-color,
+      $primary-color 1px,
+      transparent 2px,
+      transparent 7px
+    );
+  }
+
+  &.workConnector {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      $secondary-color,
+      $secondary-color 1px,
+      transparent 2px,
+      transparent 7px
+    );
+  }
+    
+    background-color: transparent;
+  }
+}
