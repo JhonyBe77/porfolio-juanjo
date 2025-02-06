@@ -2,6 +2,7 @@ import React from "react";
 import Home from './Home';
 import Perfil from './Perfil';
 import Carrera from './Carrera';
+import Porfolio from './Porfolio';
 
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
     <Home/>
     <Perfil/>
     <Carrera/>
+    <Porfolio/>
   </main>;
 };
 
