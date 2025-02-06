@@ -44,7 +44,7 @@
 
         img {
             width: 100%;
-            height: 180px;
+            height: 300px;
             object-fit: cover;
         }
 
@@ -93,32 +93,33 @@
         }
 
         .listInfo {
-            flex-grow: 1;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            justify-content: center;
+            justify-content: center; // Distribuye los elementos
+            align-items: center; // Centra verticalmente
             list-style: none;
             padding: 0;
             margin: 0;
-
+        
             li {
                 font-size: 12px;
-                padding: 6px 14px;
+                padding: 6px 12px;
                 border: 1px solid $secondary-color;
                 border-radius: 50px;
                 background: none;
                 text-align: center;
-                min-width: 140px;
+                min-width: auto; // Elimina el tamaño mínimo fijo
+                white-space: nowrap; // Evita que los textos de los <li> se dividan en varias líneas
                 transition: background 0.3s ease-in-out, transform 0.2s ease;
-
+        
                 &:hover {
                     background: rgba($secondary-color, 0.2);
                     transform: scale(1.05);
                 }
             }
         }
-
+        
         button {
             width: 100%;
             padding: 10px;
@@ -151,5 +152,16 @@
 @media screen and (max-width: 768px) {
     #sectionProjects {
         padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .listInfo {
+        justify-content: space-evenly;
+    }
+
+    .listInfo li {
+        font-size: 10px;
+        padding: 4px 10px;
     }
 }
