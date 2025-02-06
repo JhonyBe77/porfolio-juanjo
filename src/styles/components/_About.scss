@@ -1,7 +1,7 @@
 @use '../utils/variables.scss' as *;
 @use '../utils/mixins.scss' as *;
 
-#sectionAbout {
+#sectionPerfil {
     padding: 60px 10%;
     max-width: 1000px; // Ajusta el ancho máximo según lo que desees
     margin: 0 auto; 
@@ -180,13 +180,13 @@
 }
 
 @media screen and (max-width: 1300px) {
-    #sectionAbout {
+    #sectionPerfil {
         padding: 60px 8%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #sectionAbout {
+    #sectionPerfil {
         padding: 60px 24px;
 
         .aboutMeInnerSection {
