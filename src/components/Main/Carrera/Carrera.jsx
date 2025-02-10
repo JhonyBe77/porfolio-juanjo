@@ -29,7 +29,7 @@ const Carrera = () => {
         <section>
             <CustomizedTimeline />
           </section>
-          <div>
+          {/* <div>
             <div>
               <img src={javascriptLogo} alt="Javascript Logo" />
               <h7>Javascript</h7>
@@ -88,7 +88,7 @@ const Carrera = () => {
               <img src={netlifyLogo} alt="Netlify Logo" />
               <h7>Netlify</h7>
             </div>
-          </div>
+          </div> */}
         </article>
 
       </article>

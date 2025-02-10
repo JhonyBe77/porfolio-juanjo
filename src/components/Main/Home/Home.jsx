@@ -42,11 +42,12 @@ const Home = () => {
       <img src={banner} alt="Juan José Ruipérez Fernández" />
       <article>
         <h4>Bienvenidos</h4>
-        <p>Aquí encontrarás una cuidada selección de mis proyectos, donde el diseño y la tecnología se encuentran para dar vida a ideas únicas.</p>
+        <p>Aquí encontrarás una cuidada selección de mis proyectos, donde el diseño y la tecnología se encuentran para dar vida a ideas únicas. También podrás conocer más sobre mi perfil profesional y trayectoria.</p>
+        {/* Elegir qué proyectos mostrar aquí no ha sido fácil. A lo largo de los años he trabajado en muchas ideas, y aunque no están todas, cada una de las que ves refleja cómo el diseño y la tecnología pueden unirse para dar vida a algo único.
+          Además de mis trabajos, aquí también podrás conocer más sobre mi perfil profesional. */}
       </article>
       <section>
         <article>
-          {/* <a href="mailto:deydrealonso@gmail.com" target="_blank" className="icon"><MdEmail className="footerIcon" /></a> */}
           <a href="https://github.com/JhonyBe77" target="_blank" className="icon"><FaGithub className="footerIcon" /></a>
           <a href="https://www.linkedin.com/in/jjruiperez/" target="_blank" className="icon"><FaLinkedin className="footerIcon" /></a>
         </article>

@@ -3,6 +3,21 @@ import profilePhoto from "../../../assets/fotoJJ2.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail, MdPerson, MdSearch, MdLightbulb, MdMood } from "react-icons/md";
 
+import javascriptLogo from '../../../assets/logos/javascript.svg';
+import typescriptLogo from '../../../assets/logos/typescript.svg';
+import reactLogo from '../../../assets/logos/react.svg';
+import sassLogo from '../../../assets/logos/sass.svg';
+import nodeLogo from '../../../assets/logos/nodejs.svg';
+import expressLogo from '../../../assets/logos/expressjs.svg';
+import postgreSQLLogo from '../../../assets/logos/postgres.svg';
+import sequelizeLogo from '../../../assets/logos/sequelize.svg';
+import mongoDBLogo from '../../../assets/logos/mongoDB.svg';
+import mongooseLogo from '../../../assets/logos/mongoose.svg';
+import gitLogo from '../../../assets/logos/git.svg';
+import githubLogo from '../../../assets/logos/github.svg';
+import renderLogo from '../../../assets/logos/render.svg';
+import netlifyLogo from '../../../assets/logos/netlify.svg';
+
 const Perfil = () => {
   const cards = [
     {
@@ -72,14 +87,14 @@ const Perfil = () => {
           </article>
           <article>
             <p>
-            Creativo y apasionado profesional con más de <strong>20 años de experiencia</strong> en <strong>branding,
-             publicidad y estrategias digitales</strong>. Especializado en el diseño visual
-             y desarrollo de campañas integrales que generan impacto y fortalecen la identidad de marca.
+              Creativo y apasionado profesional con más de <strong>20 años de experiencia</strong> en <strong>branding,
+                publicidad y estrategias digitales</strong>. Especializado en el diseño visual
+              y desarrollo de campañas integrales que generan impacto y fortalecen la identidad de marca.
             </p>
 
             <p>
-            <strong class="uppercase">Diseño y Producción Audiovisual</strong>.
-             Dominio avanzado de herramientas para la creación de contenido innovador:
+              <strong class="uppercase">Diseño y Producción Audiovisual</strong>.
+              Dominio avanzado de herramientas para la creación de contenido innovador:
             </p>
             <ul className="listInfoDos">
               <li>Adobe Suite</li>
@@ -91,9 +106,44 @@ const Perfil = () => {
               <li>Cinema4D</li>
             </ul>
             <p>
-            <strong class="uppercase">Desarrollador Full Stack</strong> especializado en la creación de aplicaciones <strong>escalables, intuitivas y de alto rendimiento</strong>, con capacidad de adaptación a las tendencias y demandas del sector tecnológico. Experiencia en:
+              <strong class="uppercase">Desarrollador Full Stack</strong> especializado en la creación de aplicaciones <strong>escalables, intuitivas y de alto rendimiento</strong>, con capacidad de adaptación a las tendencias y demandas del sector tecnológico. Experiencia en:
             </p>
-            <ul className="listInfoDos">
+
+            {/* Sección de Logos */}
+            <div className="logos-container">
+              {[
+                // 1️⃣ Esenciales
+  { src: javascriptLogo, alt: "Javascript Logo", name: "JavaScript" },
+  { src: gitLogo, alt: "Git Logo", name: "Git" },
+  { src: githubLogo, alt: "GitHub Logo", name: "GitHub" },
+
+  // 2️⃣ Frontend
+  { src: reactLogo, alt: "React Logo", name: "React" },
+  { src: typescriptLogo, alt: "Typescript Logo", name: "TypeScript" },
+  { src: sassLogo, alt: "Sass Logo", name: "Sass" },
+
+  // 3️⃣ Backend
+  { src: nodeLogo, alt: "Node.js Logo", name: "Node.js" },
+  { src: expressLogo, alt: "Express Logo", name: "Express" },
+
+  // 4️⃣ Bases de Datos
+  { src: postgreSQLLogo, alt: "PostgreSQL Logo", name: "PostgreSQL" },
+  { src: sequelizeLogo, alt: "Sequelize Logo", name: "Sequelize" },
+  { src: mongoDBLogo, alt: "MongoDB Logo", name: "MongoDB" },
+  { src: mongooseLogo, alt: "Mongoose Logo", name: "Mongoose" },
+
+  // 5️⃣ Deployment & Hosting
+  { src: renderLogo, alt: "Render Logo", name: "Render" },
+  { src: netlifyLogo, alt: "Netlify Logo", name: "Netlify" },
+              ].map((logo, index) => (
+                <div key={index} className="logo-item">
+                  <img src={logo.src} alt={logo.alt} />
+                  <span>{logo.name}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* <ul className="listInfoDos">
               <li>React</li>
               <li>Node.js</li>
               <li>MongoDB</li>
@@ -105,7 +155,8 @@ const Perfil = () => {
               <li>Docker</li>
               <li>Kubernetes</li>
               <li>CI/CD</li>
-            </ul>
+            </ul> */}
+
             <p>
               Resolutivo, con habilidades de liderazgo y un enfoque centrado en resultados medibles.
             </p>
