@@ -18,6 +18,15 @@ import githubLogo from '../../../assets/logos/github.svg';
 import renderLogo from '../../../assets/logos/render.svg';
 import netlifyLogo from '../../../assets/logos/netlify.svg';
 
+import adobeLogo from '../../../assets/logos/adobeSuite.svg';
+import photoshopLogo from '../../../assets/logos/photoshop.svg';
+import illustratorLogo from '../../../assets/logos/illustrator.svg';
+import inDesignLogo from '../../../assets/logos/inDesign.svg';
+import afterEffectsLogo from '../../../assets/logos/afterEffects.svg';
+import premiereLogo from '../../../assets/logos/premierePro.svg';
+import cinemaLogo from '../../../assets/logos/cinema4D.svg';
+
+
 const Perfil = () => {
   const cards = [
     {
@@ -96,7 +105,7 @@ const Perfil = () => {
               <strong class="uppercase">Diseño y Producción Audiovisual</strong>.
               Dominio avanzado de herramientas para la creación de contenido innovador:
             </p>
-            <ul className="listInfoDos">
+            {/* <ul className="listInfoDos">
               <li>Adobe Suite</li>
               <li>Photoshop</li>
               <li>Illustrator</li>
@@ -104,7 +113,25 @@ const Perfil = () => {
               <li>After Effects</li>
               <li>Premiere Pro</li>
               <li>Cinema4D</li>
-            </ul>
+            </ul> */}
+            <div className="logos-container">
+              {[
+                { src: adobeLogo, alt: "Adobe Suite Logo", name: "Adobe Suite" },
+                { src: photoshopLogo, alt: "Photoshop Logo", name: "Photoshop" },
+                { src: illustratorLogo, alt: "Illustrator Logo", name: "Illustrator" },
+                { src: inDesignLogo, alt: "InDesign Logo", name: "InDesign" },
+                { src: afterEffectsLogo, alt: "After Effects Logo", name: "After Effects" },
+                { src: premiereLogo, alt: "Premiere Pro Logo", name: "Premiere Pro" },
+                { src: cinemaLogo, alt: "Cinema4DLogo", name: "Cinema4D" },
+              ].map((logo, index) => (
+                <div key={index} className="logo-item">
+                  <img src={logo.src} alt={logo.alt} />
+                  <span>{logo.name}</span>
+                </div>
+              ))}
+            </div>
+
+
             <p>
               <strong class="uppercase">Desarrollador Full Stack</strong> especializado en la creación de aplicaciones <strong>escalables, intuitivas y de alto rendimiento</strong>, con capacidad de adaptación a las tendencias y demandas del sector tecnológico. Experiencia en:
             </p>
@@ -113,28 +140,28 @@ const Perfil = () => {
             <div className="logos-container">
               {[
                 // 1️⃣ Esenciales
-  { src: javascriptLogo, alt: "Javascript Logo", name: "JavaScript" },
-  { src: gitLogo, alt: "Git Logo", name: "Git" },
-  { src: githubLogo, alt: "GitHub Logo", name: "GitHub" },
+                { src: javascriptLogo, alt: "Javascript Logo", name: "JavaScript" },
+                { src: gitLogo, alt: "Git Logo", name: "Git" },
+                { src: githubLogo, alt: "GitHub Logo", name: "GitHub" },
 
-  // 2️⃣ Frontend
-  { src: reactLogo, alt: "React Logo", name: "React" },
-  { src: typescriptLogo, alt: "Typescript Logo", name: "TypeScript" },
-  { src: sassLogo, alt: "Sass Logo", name: "Sass" },
+                // 2️⃣ Frontend
+                { src: reactLogo, alt: "React Logo", name: "React" },
+                { src: typescriptLogo, alt: "Typescript Logo", name: "TypeScript" },
+                { src: sassLogo, alt: "Sass Logo", name: "Sass" },
 
-  // 3️⃣ Backend
-  { src: nodeLogo, alt: "Node.js Logo", name: "Node.js" },
-  { src: expressLogo, alt: "Express Logo", name: "Express" },
+                // 3️⃣ Backend
+                { src: nodeLogo, alt: "Node.js Logo", name: "Node.js" },
+                { src: expressLogo, alt: "Express Logo", name: "Express" },
 
-  // 4️⃣ Bases de Datos
-  { src: postgreSQLLogo, alt: "PostgreSQL Logo", name: "PostgreSQL" },
-  { src: sequelizeLogo, alt: "Sequelize Logo", name: "Sequelize" },
-  { src: mongoDBLogo, alt: "MongoDB Logo", name: "MongoDB" },
-  { src: mongooseLogo, alt: "Mongoose Logo", name: "Mongoose" },
+                // 4️⃣ Bases de Datos
+                { src: postgreSQLLogo, alt: "PostgreSQL Logo", name: "PostgreSQL" },
+                { src: sequelizeLogo, alt: "Sequelize Logo", name: "Sequelize" },
+                { src: mongoDBLogo, alt: "MongoDB Logo", name: "MongoDB" },
+                { src: mongooseLogo, alt: "Mongoose Logo", name: "Mongoose" },
 
-  // 5️⃣ Deployment & Hosting
-  { src: renderLogo, alt: "Render Logo", name: "Render" },
-  { src: netlifyLogo, alt: "Netlify Logo", name: "Netlify" },
+                // 5️⃣ Deployment & Hosting
+                { src: renderLogo, alt: "Render Logo", name: "Render" },
+                { src: netlifyLogo, alt: "Netlify Logo", name: "Netlify" },
               ].map((logo, index) => (
                 <div key={index} className="logo-item">
                   <img src={logo.src} alt={logo.alt} />
