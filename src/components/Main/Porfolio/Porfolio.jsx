@@ -23,6 +23,12 @@ import proyecto9 from "../../../assets/desing/proyecto9.jpg";
 import proyecto10 from "../../../assets/desing/proyecto10.jpg";
 import proyecto11 from "../../../assets/desing/proyecto11.jpg";
 import proyecto12 from "../../../assets/desing/proyecto12.jpg";
+import proyecto13 from "../../../assets/desing/proyecto13.jpg";
+import proyecto14 from "../../../assets/desing/proyecto14.jpg";
+import proyecto15 from "../../../assets/desing/proyecto15.jpg";
+import proyecto16 from "../../../assets/desing/proyecto16.jpg";
+import proyecto17 from "../../../assets/desing/proyecto17.jpg";
+
 
 // Datos de los proyectos web
 const projectsData = [
@@ -72,6 +78,11 @@ const designProjects = [
   { src: proyecto10, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
   { src: proyecto11, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
   { src: proyecto12, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
+  { src: proyecto13, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
+  { src: proyecto14, title: "Cartel Musical", description: "Diseño para festival de música indie." },
+  { src: proyecto15, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
+  { src: proyecto16, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
+  { src: proyecto17, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
 ];
 
 const Porfolio = () => {
