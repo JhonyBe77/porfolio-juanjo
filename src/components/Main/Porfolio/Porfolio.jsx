@@ -28,6 +28,22 @@ import proyecto14 from "../../../assets/desing/proyecto14.jpg";
 import proyecto15 from "../../../assets/desing/proyecto15.jpg";
 import proyecto16 from "../../../assets/desing/proyecto16.jpg";
 import proyecto17 from "../../../assets/desing/proyecto17.jpg";
+import proyecto18 from "../../../assets/desing/proyecto18.jpg";
+import proyecto19 from "../../../assets/desing/proyecto19.jpg";
+import proyecto20 from "../../../assets/desing/proyecto20.jpg";
+import proyecto21 from "../../../assets/desing/proyecto21.jpg";
+import proyecto22 from "../../../assets/desing/proyecto22.jpg";
+import proyecto23 from "../../../assets/desing/proyecto23.jpg";
+import proyecto24 from "../../../assets/desing/proyecto24.jpg";
+import proyecto25 from "../../../assets/desing/proyecto25.jpg";
+import proyecto26 from "../../../assets/desing/proyecto26.jpg";
+import proyecto27 from "../../../assets/desing/proyecto27.jpg";
+import proyecto28 from "../../../assets/desing/proyecto28.jpg";
+import proyecto29 from "../../../assets/desing/proyecto29.jpg";
+import proyecto30 from "../../../assets/desing/proyecto30.jpg";
+import proyecto31 from "../../../assets/desing/proyecto31.jpg";
+import proyecto32 from "../../../assets/desing/proyecto32.jpg";
+
 
 
 // Datos de los proyectos web
@@ -66,23 +82,38 @@ const projectsData = [
 
 // Datos de la galería de diseño gráfico con título y descripción
 const designProjects = [
-  { src: proyecto1, title: "Cartel Musical", description: "Diseño para festival de música indie." },
-  { src: proyecto2, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
-  { src: proyecto3, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
-  { src: proyecto4, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
-  { src: proyecto5, title: "Cartel Musical", description: "Diseño para festival de música indie." },
-  { src: proyecto6, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
-  { src: proyecto7, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
-  { src: proyecto8, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
-  { src: proyecto9, title: "Cartel Musical", description: "Diseño para festival de música indie." },
-  { src: proyecto10, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
-  { src: proyecto11, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
-  { src: proyecto12, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
-  { src: proyecto13, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
-  { src: proyecto14, title: "Cartel Musical", description: "Diseño para festival de música indie." },
-  { src: proyecto15, title: "Packaging Café", description: "Diseño de envases para café artesanal." },
-  { src: proyecto16, title: "Ilustración Publicitaria", description: "Ilustración digital para campaña de marca." },
-  { src: proyecto17, title: "Concept Art Videojuego", description: "Diseño de personajes y escenarios para un videojuego indie." },
+  { src: proyecto1 },
+  { src: proyecto2 },
+  { src: proyecto3 },
+  { src: proyecto4 },
+  { src: proyecto5 },
+  { src: proyecto6 },
+  { src: proyecto7 },
+  { src: proyecto8 },
+  { src: proyecto9 },
+  { src: proyecto10 },
+  { src: proyecto11 },
+  { src: proyecto12 },
+  { src: proyecto13 },
+  { src: proyecto14 },
+  { src: proyecto15 },
+  { src: proyecto16 },
+  { src: proyecto17 },
+  { src: proyecto18 },
+  { src: proyecto19 },
+  { src: proyecto20 },
+  { src: proyecto21 },
+  { src: proyecto22 },
+  { src: proyecto23 },
+  { src: proyecto24 },
+  { src: proyecto25 },
+  { src: proyecto26 },
+  { src: proyecto27 },
+  { src: proyecto28 },
+  { src: proyecto29 },
+  { src: proyecto30 },
+  { src: proyecto31 },
+  { src: proyecto32 },
 ];
 
 const Porfolio = () => {

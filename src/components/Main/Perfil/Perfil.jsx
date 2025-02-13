@@ -26,6 +26,7 @@ import afterEffectsLogo from '../../../assets/logos/afterEffects.svg';
 import premiereLogo from '../../../assets/logos/premierePro.svg';
 import cinemaLogo from '../../../assets/logos/cinema4D.svg';
 import canvaLogo from '../../../assets/logos/canva.svg';
+import figmaLogo from '../../../assets/logos/figma.svg';
 
 
 const Perfil = () => {
@@ -123,8 +124,10 @@ const Perfil = () => {
                 { src: inDesignLogo, alt: "InDesign Logo", name: "InDesign" },
                 { src: afterEffectsLogo, alt: "After Effects Logo", name: "After Effects" },
                 { src: canvaLogo, alt: "Canva Logo", name: "Canva" },
+                { src: figmaLogo, alt: "Canva Figma", name: "Figma" },
                 { src: premiereLogo, alt: "Premiere Pro Logo", name: "Premiere Pro" },
                 { src: cinemaLogo, alt: "Cinema4DLogo", name: "Cinema4D" },
+                
               ].map((logo, index) => (
                 <div key={index} className="logo-item">
                   <img src={logo.src} alt={logo.alt} />
