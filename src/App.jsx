@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
+import cuadricula from '../src/assets/cuadricula.png';
+
 function App() {
   const [isLight, setIsLight] = useState(false);
 
@@ -21,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div className="background"></div>
+      <div className="background" style={{ backgroundImage: `url(${cuadricula})` }}></div>
       <context.Provider value={{ isLight, updateLightMode }}>
         <Header />
         <Main />
