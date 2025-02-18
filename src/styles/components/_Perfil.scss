@@ -14,10 +14,10 @@
         color: $primary-color;
         border: 2px solid rgba($primary-color, 0.2);
         border-radius: 100px;
+        background: $dark;
         padding: 10px 40px;
-        background: none;
-        width: fit-content; // El ancho se adapta al contenido del texto
-        margin: 0 auto; // Centra el elemento horizontalmente
+        width: fit-content; 
+        margin: 0 auto; 
     }
     .uppercase {
         text-transform: uppercase;

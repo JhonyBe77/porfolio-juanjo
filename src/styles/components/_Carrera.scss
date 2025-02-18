@@ -14,10 +14,10 @@
         color: $primary-color;
         border: 2px solid rgba($primary-color, 0.2);
         border-radius: 100px;
-        background: none;
+        background: $dark;
         margin-bottom: 20px;
-        width: fit-content; // El ancho se adapta al contenido del texto
-        margin: 0 auto; // Centra el elemento horizontalmente
+        width: fit-content; 
+        margin: 0 auto; 
         padding: 10px 50px;
     }
 
@@ -37,7 +37,7 @@
 
     .typeSkills,
     .typeCareer {
-        background: $gradient-dark-cv;
+       // background: $gradient-dark-cv;
         border-radius: 10px;
         padding: 10px 20px 20px 20px;
         flex: 1;

@@ -14,7 +14,7 @@
     background: none;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(3, 10, 55, 0.1);
+    //box-shadow: 0px 4px 10px rgba(3, 10, 55, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: left; // Asegura que el texto largo sea fácil de leer
@@ -23,19 +23,19 @@
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0px 6px 14px rgba(3, 10, 55, 0.3);
+      box-shadow: 0px 6px 14px rgba(3, 10, 55, 0.4);
     }
   }
 
   // Efecto hover diferente para Educación
   .educationHover:hover {
-    background-color: rgba($primary-color, 0.1);
+    background-color: rgba($azulon, 0.7);
     border-left: 1px solid $primary-color;
   }
 
   // Efecto hover diferente para Trabajo
   .workHover:hover {
-    background-color: rgba($secondary-color, 0.1);
+    background-color: rgba($dark, 0.7);
     border-left: 1px solid $secondary-color;
   }
 
